@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+  # https://hub.docker.com/r/bitnami/rabbitmq
+  minio:
+    image: bitnami/rabbitmq
+    ports:
+      - "4369:4369"
+      - "5672:5672"
+      - "25672:25672"
+      - "15672:15672"
+    environment:
+      - RABBITMQ_USERNAME=admin
+      - RABBITMQ_PASSWORD=some_random_password
+    volumes:
+      - rabbitmq-data:/bitnami
+
+volumes:
+  rabbitmq-data:

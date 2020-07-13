@@ -7,9 +7,4 @@ services:
     ports:
       - "6379:6379"
     environment:
-      - REDIS_PASSWORD=guest
-    volumes:
-      - redis-data:/bitnami/redis/data
-
-volumes:
-  redis-data:
+      - REDIS_PASSWORD=password

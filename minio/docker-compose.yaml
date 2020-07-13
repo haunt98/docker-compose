@@ -7,10 +7,5 @@ services:
     ports:
       - "9000:9000"
     environment:
-      - MINIO_ACCESS_KEY=guest
-      - MINIO_SECRET_KEY=guest
-    volumes:
-      - minio-data:/data
-
-volumes:
-  minio-data:
+      - MINIO_ACCESS_KEY=user
+      - MINIO_SECRET_KEY=password

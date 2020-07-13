@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  # https://hub.docker.com/r/bitnami/prometheus
+  prometheus:
+    image: bitnami/prometheus
+    ports:
+      - "9090:9090"

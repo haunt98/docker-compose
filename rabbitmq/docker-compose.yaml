@@ -10,8 +10,8 @@ services:
       - "25672:25672"
       - "15672:15672"
     environment:
-      - RABBITMQ_USERNAME=admin
-      - RABBITMQ_PASSWORD=some_random_password
+      - RABBITMQ_USERNAME=guest
+      - RABBITMQ_PASSWORD=guest
     volumes:
       - rabbitmq-data:/bitnami
 

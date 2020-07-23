@@ -1,7 +1,6 @@
 version: "3"
 
 services:
-  # https://hub.docker.com/r/bitnami/zookeeper
   zookeeper:
     image: bitnami/zookeeper
     ports:
@@ -9,7 +8,6 @@ services:
     environment:
       - ALLOW_ANONYMOUS_LOGIN=yes
 
-  # https://hub.docker.com/r/bitnami/zookeeper
   kafka:
     image: bitnami/kafka
     ports:

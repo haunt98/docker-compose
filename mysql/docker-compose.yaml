@@ -2,7 +2,7 @@ version: "3"
 
 services:
   mysql:
-    image: "bitnami/mysql:latest"
+    image: bitnami/mysql
     ports:
       - "3306:3306"
     environment:

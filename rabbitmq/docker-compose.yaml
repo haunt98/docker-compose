@@ -1,3 +1,4 @@
+# https://hub.docker.com/r/bitnami/rabbitmq
 version: "3"
 
 services:

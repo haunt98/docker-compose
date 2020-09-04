@@ -1,3 +1,4 @@
+# https://hub.docker.com/r/bitnami/mysql/
 version: "3"
 
 services:
@@ -6,5 +7,5 @@ services:
     ports:
       - "3306:3306"
     environment:
-      - MYSQL_ROOT_PASSWORD=password
+      - ALLOW_EMPTY_PASSWORD=yes
       - MYSQL_DATABASE=database
